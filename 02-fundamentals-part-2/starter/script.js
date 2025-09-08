@@ -11,7 +11,6 @@
 // // // // logger();
 // // // // logger();
 
-
 // // // // function fruitProcessor(apples, oranges) {
 // // // //   console.log(apples, oranges);
 // // // //   const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
@@ -41,17 +40,16 @@
 // // // // console.log(age1);
 
 // // // // function calcMyAge(birthYear, currentYear) {
-  
+
 // // // //   const age = currentYear - birthYear;
 // // // //   return age;
 // // // // }
 
-// // // // const myAge = calcMyAge(1991, 2037); 
+// // // // const myAge = calcMyAge(1991, 2037);
 // // // // const herAge = calcMyAge(2005, 2037);
 
 // // // // console.log(`I am ${myAge} years old`);
 // // // // console.log(`She is ${herAge} years old`);
-
 
 // // // // function introduce(firstName, lastName, age) {
 // // // //   const introduction = `Hi, I'm ${firstName} ${lastName} and I'm ${age} years old.`;
@@ -61,7 +59,6 @@
 // // // // console.log(introduce("Earl", "De Leon", 21));
 // // // // console.log(introduce("Nicole", "Fajardo", 20));
 
-
 // // // // // Return Values and Scope
 
 // // // // function calcMeAge(birthYear) {
@@ -69,7 +66,7 @@
 // // // // }
 
 // // // // function yearsUntilRetirement(birthYear, firstName) {
-// // // //   const age = calcMeAge(birthYear); 
+// // // //   const age = calcMeAge(birthYear);
 // // // //   const retirement = 65 - age;
 
 // // // //   if (retirement > 0) {
@@ -119,7 +116,6 @@
 // // // // scoreDolphins = calcAverage(85, 54, 41);
 // // // // scoreKoalas = calcAverage(23, 34, 27);
 // // // // console.log(checkWinner(scoreDolphins, scoreKoalas));
-
 
 // // // // // JavaScript Fundamentals Part 2 - Hour 1
 
@@ -173,9 +169,8 @@
 // // // console.log(friend);
 
 // // // const popped = friends.pop();
-// // // console.log(popped);    
+// // // console.log(popped);
 // // // console.log(friends);
-
 
 // // // const shifted = friends.shift();
 // // // console.log(shifted);
@@ -186,7 +181,6 @@
 
 // // // console.log(friends.includes("Steven"));
 // // // console.log(friends.includes("Bob"));
-
 
 // // // // Array Iteration - Loops
 // // // const friendS = ["Michael", "Steven", "Peter"];
@@ -211,7 +205,6 @@
 // // //   console.log(`Friend ${index + 1}: ${friend}`);
 // // // });
 
-
 // // // const graded = [85, 92, 78, 96, 88, 74];
 // // // let total = 0;
 
@@ -227,7 +220,6 @@
 // // // });
 // // // console.log(`${passedCount} out of ${grades.length} students passed`);
 
-
 // // // // Coding Challenge #2 - Student Grade Manager
 
 // // // const studentScores = [78, 85, 92, 67, 88, 95, 73, 82];
@@ -239,7 +231,6 @@
 // // //   }
 // // //   return sum / scores.length;
 // // // }
-
 
 // // // function findHighestGrade(scores) {
 // // //   let highest = scores[0];
@@ -271,7 +262,6 @@
 // // //   return count;
 // // // }
 
-
 // // // const avgScore = calculateAverage(studentScores);
 // // // const highest = findHighestGrade(studentScores);
 // // // const lowest = findLowestGrade(studentScores);
@@ -283,11 +273,7 @@
 // // // console.log(`Lowest: ${lowest}`);
 // // // console.log(`Passing students: ${passing} out of ${studentScores.length}`);
 
-
-
 // // // // JavaScript Fundamentals Part 2 - Hour 2
-
-
 
 // // // The Array Problem
 
@@ -299,10 +285,10 @@
 // //   ["Michael", "Peter", "Steven"],
 // // ];
 
-// // console.log(jonasArray[0]); 
-// // console.log(jonasArray[1]); 
+// // console.log(jonasArray[0]);
+// // console.log(jonasArray[1]);
 // // console.log(jonasArray[2]);
-// // console.log(jonasArray[3]); 
+// // console.log(jonasArray[3]);
 // // console.log(jonasArray[4]);
 
 // // console.log("=== OBJECTS ===");
@@ -316,7 +302,6 @@
 // // };
 // // console.log(jonas);
 
-
 // // const earlObject = {
 // //   firstName: "Earl",
 // //   lastName: "Baccay",
@@ -327,7 +312,6 @@
 // //  console.log(
 // //     `${earlObject.firstName} is a ${earlObject.age}-year-old ${earlObject.job}.`
 // //  )
-
 
 // //  // Property Access Methods
 
@@ -343,7 +327,7 @@
 // // console.log(earlObject["lastName"]);
 // // console.log(earlObject["age"]);
 
-// // // Bracket notation with expressions 
+// // // Bracket notation with expressions
 // // const nameKey = "Name";
 // // console.log(earlObject["first" + nameKey]);
 // // console.log(earlObject["last" + nameKey]);
@@ -358,7 +342,6 @@
 // // earlObject["instagram"] = "@earljustineb";
 // // earlObject.hasDriversLicense = true;
 // // console.log(earlObject);
-
 
 // // const book = {
 // //   title: "The Night is Still Young",
@@ -407,9 +390,9 @@
 // // // Objects can contain arrays, arrays can contain objects
 // // const student = {
 // //   name: "Sarah",
-// //   grades: [85, 92, 78], 
+// //   grades: [85, 92, 78],
 // //   address: {
-    
+
 // //     street: "123 Main St",
 // //     city: "New York",
 // //   },
@@ -445,7 +428,7 @@
 // //   hasDriversLicense: true,
 
 // //   calcAge: function () {
-// //     console.log(this); 
+// //     console.log(this);
 // //     return 2025 - this.birthYear;
 // //   },
 // // };
@@ -461,7 +444,7 @@
 // //   hasDriversLicense: false,
 
 // //   calcAge: function () {
-// //     this.age = 2025 - this.birthYear; 
+// //     this.age = 2025 - this.birthYear;
 // //     return this.age;
 // //   },
 
@@ -494,7 +477,7 @@
 // //     const currentYear = new Date().getFullYear();
 // //     this.age = currentYear - this.birthYear;
 // //     return this.age;
-// //   }, 
+// //   },
 
 // //   addFriend: function (name, status = "active") {
 // //     this.friends.push({ name, status });
@@ -570,15 +553,15 @@
 // // console.log(buttonById === button);
 
 // // const allParagraphs = document.querySelectorAll("p");
-// // console.log(allParagraphs); 
-// // console.log(allParagraphs[0]); 
+// // console.log(allParagraphs);
+// // console.log(allParagraphs[0]);
 // // console.log(allParagraphs.length);
 
 // const message = document.querySelector(".message");
 
-// console.log(message.textContent); 
+// console.log(message.textContent);
 // message.textContent = "Hello from JavaScript!";
-// console.log(message.textContent); 
+// console.log(message.textContent);
 
 // message.innerHTML = "<strong>Bold text from JS!</strong>";
 // console.log(message.innerText);
@@ -588,13 +571,13 @@
 // const input = document.querySelector(".guess");
 
 // console.log(input.value);
-// input.value = "Default text"; 
+// input.value = "Default text";
 // input.placeholder = "Type here";
 
 // const heading = document.querySelector("h1");
 
 // heading.style.color = "red";
-// heading.style.backgroundColor = "yellow"; 
+// heading.style.backgroundColor = "yellow";
 // heading.style.fontSize = "3rem";
 // heading.style.padding = "20px";
 // heading.style.borderRadius = "10px";
@@ -643,4 +626,4 @@
 //   }
 // });
 
-// // JavaScript Fundamentals Part 2 - Hour 4 
+// // JavaScript Fundamentals Part 2 - Hour 4
