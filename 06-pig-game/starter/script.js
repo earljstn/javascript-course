@@ -26,6 +26,8 @@ const btnRoll = document.querySelector('.btn--roll');
 
 const btnHold = document.querySelector('.btn--hold');
 
+const btnNew = document.querySelector('.btn--new');
+
 // Game initialization function
 
 const init = function () {
@@ -46,6 +48,14 @@ const init = function () {
   current1El.textContent = 0;
 
   diceEl.classList.add('hidden');
+
+  player0El.classList.remove('player--winner');
+
+  player1El.classList.remove('player--winner');
+
+  player0El.classList.add('player--active');
+
+  player1El.classList.remove('player--active');
 };
 
 init();
@@ -86,7 +96,21 @@ btnHold.addEventListener('click', function () {
     scores[activePlayer] += currentScore;
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
+    if (scores[activePlayer] >= 100) {
+      playing = false;
+      diceEl.classList.add('hidden');
 
-    switchPlayer();
+      document
+        .querySelector(`.player--${activePlayer}`)
+        .classList.add('player--winner');
+
+      document
+        .querySelector(`.player--${activePlayer}`)
+        .classList.remove('player--active');
+    } else {
+      switchPlayer();
+    }
   }
 });
+
+btnNew.addEventListener('click', init);
