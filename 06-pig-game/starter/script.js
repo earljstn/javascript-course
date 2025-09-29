@@ -24,6 +24,8 @@ const diceEl = document.querySelector('.dice');
 
 const btnRoll = document.querySelector('.btn--roll');
 
+const btnHold = document.querySelector('.btn--hold');
+
 // Game initialization function
 
 const init = function () {
@@ -62,9 +64,29 @@ btnRoll.addEventListener('click', function () {
       document.getElementById(`current--${activePlayer}`).textContent =
         currentScore;
     } else {
-      currentScore = 0;
+      switchPlayer();
 
-      document.getElementById(`current--${activePlayer}`).textContent = 0;
+      console.log('Active Player:', activePlayer);
     }
+  }
+});
+
+const switchPlayer = function () {
+  document.getElementById(`current--${activePlayer}`).textContent = 0;
+  currentScore = 0;
+
+  activePlayer = activePlayer === 0 ? 1 : 0;
+
+  player0El.classList.toggle('player--active');
+  player1El.classList.toggle('player--active');
+};
+
+btnHold.addEventListener('click', function () {
+  if (playing && currentScore > 0) {
+    scores[activePlayer] += currentScore;
+    document.getElementById(`score--${activePlayer}`).textContent =
+      scores[activePlayer];
+
+    switchPlayer();
   }
 });
